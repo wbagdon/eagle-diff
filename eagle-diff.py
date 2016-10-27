@@ -9,13 +9,18 @@ try:
     import ImageTk
     import ImageChops
 except ImportError:
-    print "PIL missing\nInstall it from http://www.pythonware.com/products/pil/"
+    print "PIL missing"
+    print "Install it from http://www.pythonware.com/products/pil/"
     sys.exit(1)
 
 import Tkinter
 import subprocess
 
 eagle_path = "C:/Program Files (x86)/EAGLE-6.1.0/bin/eagle.exe"
+if not os.path.exists(eagle_path):
+    print "Eagle path not correctly set"
+    print "Currently using path: ", eagle_path
+    sys.exit(1)
 
 cmd = eagle_path + " -C \"export image b1.png 400;quit\" " + sys.argv[1]
 subprocess.call(cmd)
