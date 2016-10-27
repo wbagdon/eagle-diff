@@ -6,7 +6,8 @@ This simple python script lets you visually diff eagle CAD schematic and board f
  - Adjust eagle_path variable if it is different
 
 ## Prerequisites
- - [PIL](http://www.pythonware.com/products/pil/)
+ - [Pillow](https://pillow.readthedocs.io/en/3.4.x/index.html)
+ - `pip install Pillow`
 
 ## Git Setup
 ### Add this to your .gitconfig:

@@ -3,12 +3,10 @@ import os
 import sys
 import imp
 try:
-    imp.find_module('Image')
-    imp.find_module('ImageTk')
-    imp.find_module('ImageChops')
-    import Image
-    import ImageTk
-    import ImageChops
+    imp.find_module('PIL')
+    from PIL import Image
+    from PIL import ImageTk
+    from PIL import ImageChops
 except ImportError:
     print "PIL missing"
     print "Install it from http://www.pythonware.com/products/pil/"
