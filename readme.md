@@ -12,7 +12,7 @@ This simple python script lets you visually diff eagle CAD schematic and board f
 ### Add this to your .gitconfig:
 ```
 [diff "eagle"]
-  command = eagle-diff
+	command = eagle-diff.py
 ```
 ### Add a .gitattributes file to your project with these lines:
 

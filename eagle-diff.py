@@ -1,8 +1,17 @@
 #!/usr/bin/env python
 import os, sys
-import Image
-import ImageTk
-import ImageChops
+import imp
+try:
+    imp.find_module('Image')
+    imp.find_module('ImageTk')
+    imp.find_module('ImageChops')
+    import Image
+    import ImageTk
+    import ImageChops
+except ImportError:
+    print "PIL missing\nInstall it from http://www.pythonware.com/products/pil/"
+    sys.exit(1)
+
 import Tkinter
 import subprocess
 
