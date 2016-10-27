@@ -3,7 +3,7 @@ This simple python script lets you visually diff eagle CAD schematic and board f
 
 ## Installation
  - Download eagle-diff.py somewhere on your path
- - Adjust eagle_path variable if it is different
+ - Eagle 7.0.0 - 7.7.0 are auto-detected, using the latest available
 
 ## Prerequisites
  - [Pillow](https://pillow.readthedocs.io/en/3.4.x/index.html)
