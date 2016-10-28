@@ -2,8 +2,8 @@
 This simple python script lets you visually diff eagle CAD schematic and board files.
 
 ## Installation
- - Download eagle-diff.py somewhere on your path
- - Eagle 7.0.0 - 7.7.0 are auto-detected, using the latest available
+ - Download eagle_diff.py somewhere on your path
+ - Eagle 7.0.0 - 7.7.0 are auto-detected, using the latest available installed on system
 
 ## Prerequisites
  - [Pillow](https://pillow.readthedocs.io/en/3.4.x/index.html)
@@ -13,7 +13,7 @@ This simple python script lets you visually diff eagle CAD schematic and board f
 ### Add this to your .gitconfig:
 ```
 [diff "eagle"]
-	command = eagle-diff.py
+	command = eagle_diff.py
 ```
 ### Add a .gitattributes file to your project with these lines:
 
